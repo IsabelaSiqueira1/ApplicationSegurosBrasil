@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Top Seguros Brasil</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/ApplicationSeguros.styles.css" asp-append-version="true" />
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm border-bottom box-shadow mb-3">
+            <div class="container-fluid">
+             <!-- <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Top Seguros Brasil</a> --> 
+               <div class="container">
+                <div class="justify-content-between">
+                    <!-- <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Top Seguros Brasil</a> --> 
+               
+                    <ul class=" nav nav-pills " id="pills-tab" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active botao-nav"asp-area="" asp-controller="Home" asp-action="Index">Planos</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link  botao-nav"asp-area="" asp-controller="Home" asp-action="Login">Entrar</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link botao-nav" asp-area="" asp-controller="Home" asp-action="Sobre">Sobre nós</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link botao-nav" asp-area="" asp-controller="Home" asp-action="Sobre">Atendimento</a>
+                          </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2022 - Top Seguros Brasil
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

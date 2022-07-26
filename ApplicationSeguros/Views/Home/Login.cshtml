@@ -1,0 +1,33 @@
+﻿@{
+    ViewData["Title"] = "Entrar";
+}
+
+<div style="width:750px;" class="text-center" >
+    <h3 class="display-4">Acessar conta</h3>
+    <br>
+    
+          <h5>Para realizar o seu acesso,  preencha o seus dados.</h5>
+          <div class="form-floating mb-3">
+                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                <label for="floatingInput">Email address</label>
+          </div>
+          <div class="form-floating">
+                <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                <label for="floatingPassword">Password</label>
+          </div>  
+          <br>
+ 
+            @Html.ActionLink("Entrar", "Dashboard", "Home", null, new { @class = "btn btn-primary" })
+            <div class="mb-3 form-check">
+                 <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                 <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            </div>
+   
+      <br>
+      <div>
+          <h5>Não é cadastrado ?</h5>
+         @Html.ActionLink("Cadastre-se", "Formulario", "Home", null, new { @class = "btn btn-primary" })
+      </div>
+
+      <img src="../img/64620.jpg" class="img-responsive" alt="Imagem de um quadrado genérico com bordas arredondadas, em uma figure.">
+</div>

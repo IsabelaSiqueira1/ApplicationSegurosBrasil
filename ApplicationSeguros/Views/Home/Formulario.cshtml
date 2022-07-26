@@ -1,0 +1,127 @@
+﻿@{
+    ViewData["Title"] = "Cadastro";
+}
+
+<div class="text-center">
+    <h1 class="display-5">Top Seguros Brasil</h1><br>
+    <h4 class="display-8">Preencha os seus dados</h4><br>
+    <form>
+
+        <div class="row">
+            <div class="col">
+                <input type="text" class="form-control" placeholder="Nome" aria-label="First name">
+            </div>
+            <div class="col">
+                <input type="text" class="form-control" placeholder="Sobrenome" aria-label="Sobrenome">
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col">
+                <input type="email" class="form-control" id="inputEmail4" placeholder="Telefone" aria-label="Telefone">
+              </div>
+              <div class="col">
+                <input type="email" class="form-control" id="inputEmail4" placeholder="E-mail" aria-label="E-mail">
+              </div>
+
+              <div class="col">
+                <input type="password" class="form-control" id="inputPassword4" placeholder="Senha" aria-label="Senha">
+              </div>
+        </div>
+        <br>
+          <select class="form-select" aria-label="Default select example">
+                 <option selected>Sexo</option>
+                 <option value="1">Feminino</option>
+                 <option value="2">Masculino</option>
+                 <option value="3">Prefiro não informar</option>
+          </select>
+          <br>
+          <div class="row">
+              <div class="col">
+                 <input type="text" class="form-control" id="inputAddress" placeholder="Rua das frutas, 77">
+              </div>
+
+              <div class="col">
+                <input type="text" class="form-control" id="inputAddress2" placeholder="Complemento">
+              </div>
+          </div>
+          <br>
+          <div class="row">
+              <div class="col">
+                <input type="text" class="form-control" id="inputCity" placeholder="Cidade">
+              </div>
+          
+              <div class="col">
+                <select id="inputState" class="form-select">
+                  <option selected>Estado</option>
+                  <option>São Paulo</option>
+                </select>
+              </div>
+
+              <div class="col">
+                <input type="text" class="form-control" id="inputZip" laceholder="CEP">
+              </div>
+          </div>
+          <br><br>
+        <div class="row">
+            <div class="col">
+                <input type="text" class="form-control" placeholder="CPF" aria-label="CPF">
+            </div>
+            <div class="col">
+                <input type="text" class="form-control" placeholder="RG" aria-label="RG">
+            </div>
+        </div>
+        <br>
+
+        <div class="row">
+          <div class="form-group col">
+            <label for="exampleFormControlFile1">Enviar documento CPF</label>
+            <input type="file" class="form-control-file" id="exampleFormControlFile1">
+          </div>
+
+          <div class="form-group col">
+            <label for="exampleFormControlFile1">Enviar documento RG frente</label>
+            <input type="file" class="form-control-file" id="exampleFormControlFile1">
+          </div>
+
+          <div class="form-group col">
+            <label for="exampleFormControlFile1">Enviar documento RG verso</label>
+            <input type="file" class="form-control-file" id="exampleFormControlFile1">
+          </div>
+        </div>
+
+        <br><br>
+
+        <div class="row">
+            <div class="col">
+                <input type="text" class="form-control" placeholder="CNH" aria-label="CNH">
+            </div>
+            <div class="col">
+                <input type="text" class="form-control" placeholder="Rennavan" aria-label="Rennavan">
+            </div>
+            <div class="col">
+                <input type="text" class="form-control" placeholder="Chassi" aria-label="Chassi">
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col">
+                <input type="text" class="form-control" placeholder="Modelo veiculo" aria-label="Modelo veiculo">
+            </div>
+            <div class="col">
+                <input type="text" class="form-control" placeholder="Ano" aria-label="Ano">
+            </div>
+        </div>
+        <br>
+
+          <select class="form-select" aria-label="Default select example">
+                 <option selected>Você possui garagem</option>
+                 <option value="1">Sim</option>
+                 <option value="2">Não</option>
+          </select>
+
+          <br><br>
+          @Html.ActionLink("Cadastrar", "Dashboard", "Home", null, new { @class = "btn btn-primary" })
+
+    </form>
+</div>

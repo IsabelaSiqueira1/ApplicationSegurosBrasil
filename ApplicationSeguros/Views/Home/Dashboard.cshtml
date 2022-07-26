@@ -1,0 +1,73 @@
+﻿@{
+    ViewData["Title"] = "Dasshhhh";
+}
+<div class="row">
+    <ul class="nav nav-pills col" id="pills-tab" role="tablist">
+          <li class="nav-item">
+            <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Perfil</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Atendimento</a>
+          </li>
+    </ul>
+    <div class="tab-content col" id="pills-tabContent">
+          <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab"></div>
+          <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab"></div>
+          <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab"></div>
+    </div>
+    <nav class="navbar col ">
+        <input class="form-control col justify_content-end" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
+    </nav>
+    <nav class="navbar col ">
+    <button type="button" class="justify_content-end btn btn-outline-primary btn-sm">Pesquisar</button>
+    </nav>
+</div>
+
+<div class="jumbotron">
+      <h3 class="display-4">Olá, Raoul!</h3>
+      <p class="lead">Plano atual: Comfort</p>
+      <p class="lead">Veiculo: Fox 2008 Placa: xxxx-xxxx</p>
+      <hr class="my-4">
+      @Html.ActionLink("Ver apolice", "Dashboard", "Home", null, new { @class = "btn btn-primary" })
+      @Html.ActionLink("Falar com corretor", "Dashboard", "Home", null, new { @class = "btn btn-primary" })
+</div>
+
+<br><br>
+<div class="text-center">
+    <h3>Coberturas</h3>
+    <h7>Proteção sob medida para o seu carro</h7>
+</div>
+<br>
+
+<div class="row">
+  <div class="col">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Título especial</h5>
+        <p class="card-text">Com suporte a texto embaixo, que funciona como uma introdução a um conteúdo adicional.</p>
+        <a href="#" class="btn btn-primary">Visitar</a>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Título especial</h5>
+        <p class="card-text">Com suporte a texto embaixo, que funciona como uma introdução a um conteúdo adicional.</p>
+        <a href="#" class="btn btn-primary">Visitar</a>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Título especial</h5>
+        <p class="card-text">Com suporte a texto embaixo, que funciona como uma introdução a um conteúdo adicional.</p>
+        <a href="#" class="btn btn-primary">Visitar</a>
+      </div>
+    </div>
+  </div>
+</div>

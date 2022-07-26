@@ -1,0 +1,94 @@
+html {
+    font-size: 14px;
+    
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+.main{
+
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+.row {
+    padding-right: 0px;
+    padding-left: 0px;
+    margin-bottom:10px;
+}
+
+main .bp-3{
+    width:100%;
+}
+body {
+    width:100%;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 60px;
+    background: #DCF1FA;
+}
+
+.container {
+    width:100vw;
+}
+.h1-home{
+    margin-top:55px;
+    padding-bottom:10px;
+    font-size:2.4rem;
+    font-weight:600;
+}
+
+.h6-home {
+    padding-bottom: 12px;
+}
+
+.btn-home {
+    
+}
+
+.botao-nav{
+    background:#001D3D;
+}
+
+.img-logo-home {
+    position: relative;
+    left: 120px;
+    margin-top:100px;
+    width:580px;
+    height:410px;
+}
+
+.lista-home {
+
+}
+.conteudo-home {
+    background: #edf6f9;
+    border-radius: 10px;
+    border: 1px solid #caf0f8;
+    box-shadow: 1px 2px 1px #8d99ae;
+}
+
+.icone-home{
+    margin-right:13px;
+}
+.segundary-home {
+    background: #FFFFFF;
+    width:100%;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    color: #001D3D;
+}
+.alert {
+    color: #000000;
+}
+
+.navbar {
+    background:#DCF1FA;
+    padding: 10px;
+}
