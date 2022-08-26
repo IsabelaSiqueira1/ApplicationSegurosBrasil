@@ -29,4 +29,8 @@
     <None Include="wwwroot\img\info.png" />
   </ItemGroup>
 
+  <ItemGroup>
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.3" />
+  </ItemGroup>
+
 </Project>
