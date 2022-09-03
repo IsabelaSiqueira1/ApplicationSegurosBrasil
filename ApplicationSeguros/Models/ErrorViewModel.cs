@@ -1,4 +1,3 @@
-using com.sun.org.apache.bcel.@internal.generic;
 using System.Data.SqlClient;
 
 namespace ApplicationSeguros.Models
