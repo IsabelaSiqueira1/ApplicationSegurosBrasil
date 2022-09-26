@@ -1,3 +1,32 @@
 ﻿@{
-    ViewData["Title"] = "autenticadorrr";
+    ViewData["Title"] = "Autenticação de acesso";
 }
+
+<div class="text-center">
+
+    <form>
+        <div>
+            <h5>Precisando validar os seus dados</h5>
+            <p>Por questão de seguração iremos enviar um sms com o codigo de validação</p>
+
+            <div>
+                <h6>Confirme novamente o seu E-mail</h6>
+
+              <div class="form-floating mb-3">
+                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                    <label for="floatingInput">Endereço de e-mail</label>
+                    @Html.ActionLink("Confirmar", "Dashboard", "Home", null, new { @class = "btn btn-primary" })
+              </div>
+
+            </div>
+            <div>
+                <div>
+                    <h5>Enviamos um e-mail para você!</h5>
+                    <p>Verifique em sua caixa de entrada ou spam!</p>
+                </div>
+            </div>
+        </div>
+        
+    </form>
+  
+</div>
