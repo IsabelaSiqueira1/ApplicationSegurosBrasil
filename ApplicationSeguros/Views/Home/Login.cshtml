@@ -2,19 +2,17 @@
     ViewData["Title"] = "Entrar";
 }
 
+<div class="primary-home">
+    <h1 style="margin-top:200px;" class="text-center">Acessar conta</h1>
+    <h5 class="text-center lead">Para realizar o seu acesso,  preencha o seus dados.</h5>
 
-
-<div style="width:750px;" class="text-center" >
-    <h3 class="display-4">Acessar conta</h3>
-    <br>
-    
-          <h5>Para realizar o seu acesso,  preencha o seus dados.</h5>
+    <div style="margin-top:40px; margin-bottom:40px;" class="row">
       <form>
-          <div class="form-floating mb-3">
+          <div class="form-floating col mb-3">
                 <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" required>
                 <label for="floatingInput">Endereço de e-mail</label>
           </div>
-          <div class="form-floating">
+          <div class="form-floating col">
                 <input type="password" class="form-control" id="floatingPassword" placeholder="Password" required>
                 <label for="floatingPassword">Senha</label>
                 <small id="passwordHelpBlock" class="form-text text-muted"> 
@@ -27,15 +25,13 @@
           </div>
 
           @Html.ActionLink("Entrar", "Dashboard", "Home", null, new { @class = "btn btn-primary" })
-
-
       </form>
 
-   
-     
       <div>
           <h5>Não é cadastrado ?</h5>
          @Html.ActionLink("Cadastre-se", "Autenticador", "Home", null, new { @class = "btn btn-primary" })
       </div>
 
+    </div>
 </div>
+
