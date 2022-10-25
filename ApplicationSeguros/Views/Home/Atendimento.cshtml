@@ -1,5 +1,61 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
-@{
+﻿@{
+    ViewData["Title"] = "Atendimento";
 }
+
+<link rel="stylesheet" type="text/css" href="~/lib/bootstrap/dist/css/bootstrap.min.css">
+
+
+<div style="margin-top:40px; margin-bottom:40px;">
+    <h1 class="text-center">   Entre em contato conosco! <span class="badge badge-secondary">Novo</span></h1>
+
+    <h5 style="margin-top:40px;" class="text-center">Estamos sempre prontos para te ajudar com reclamações e<br>cancelamento de contratos, 24h por dia, 7 dias por semana. </h5>
+
+    <div class="col">
+        <img src="../img/Logo-contato.png" class="rounded mx-auto d-block" style="width:370px" alt="Imagem Responsiva">
+    </div>
+</div>
+    <h2 style="margin-top:40px;margin-bottom:60px;" >FALE COM A GENTE! <span class=" badge badge-secondary">Novo</span></h2>
+    <div class="row ">
+      <div class="col-sm-4">
+        <div class="card text-center border-primary" >
+          <div class="card-body" >
+            <h5 class="card-title" style="margin-bottom:20px;">Central de atendimento</h5>
+             @Html.ActionLink("4000-3535", "Formulario", "Home", null, new { @class = "btn btn-primary" })
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="card text-center border-primary">
+          <div class="card-body" >
+            <h5 class="card-title" style="margin-bottom:20px;">Atendimento via Chat</h5>
+            @Html.ActionLink("Iniciar conversa", "Formulario", "Home", null, new { @class = "btn btn-primary" })
+          </div>
+        </div>
+      </div>
+    </div>
+    <h5 style="margin-top:40px; margin-bottom:40px;">O problema não foi resolvido em outros canais? Não se preocupe!<br>É só ligar para a Ouvidoria: segunda a sexta, das 9h às 18h. <span class="badge badge-secondary">Novo</span></h5>
+
+    <div class="row ">
+      <div class="col-sm-4">
+        <div class="card text-center border-primary" >
+          <div class="card-body " >
+            <h5 class="card-title " style="margin-bottom:20px;">Sac</h5>
+             @Html.ActionLink("0800 774 400", "Formulario", "Home", null, new { @class = "btn btn-primary" })
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4" style=" margin-bottom:40px; ">
+        <div class="card text-center border-primary" >
+          <div class="card-body" >
+            <h5 class="card-title" style="margin-bottom:20px;">Ouvidoria</h5>
+            @Html.ActionLink("0800 774 400", "Formulario", "Home", null, new { @class = "btn btn-primary" })
+          </div>
+        </div>
+      </div>
+
+ 
+
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script src="~/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="~/lib/jquery/dist/jquery.js"></script>
+<script src="~/js/site.js"></script>

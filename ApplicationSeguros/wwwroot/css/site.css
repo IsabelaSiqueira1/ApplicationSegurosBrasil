@@ -26,11 +26,11 @@ main .bp-3{
     width:100%;
 }
 body {
-    width:100%;
+    background: #DCF1FA;
+    width: 100%;
     margin-left: 0px;
     margin-right: 0px;
     margin-bottom: 60px;
-    background: #DCF1FA;
 }
 
 .container {
