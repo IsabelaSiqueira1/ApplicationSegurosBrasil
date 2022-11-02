@@ -8,42 +8,55 @@
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/ApplicationSeguros.styles.css" asp-append-version="true" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-
-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous"/>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm border-bottom box-shadow mb-3">
-            <div class="container-fluid">
-             <!-- <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Top Seguros Brasil</a> --> 
-               <div class="container">
-                <div class="justify-content-between">
-                    <!-- <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Top Seguros Brasil</a> --> 
-               
-                    <ul class=" nav nav-pills " id="pills-tab" role="tablist">
-                        <li class="nav-item">
-                            <a class="nav-link active botao-nav"asp-area="" asp-controller="Home" asp-action="Index">Planos</a>
+        <div id="header">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg justify-content-between navbar-toggleable-sm border-bottom box-shadow ">
+                   <a class="navbar-brand" href="#Home">
+                       <img src="./img/Top Seguros Brasil.png" class="img-fluid"/>
+                   </a>
+                   <button
+                       class="navbar-toggler"
+                       type="button"
+                       data-toggle="collapse"
+                       data-target="#navbarNav"
+                       arial-controls="navbarNav"
+                       arial-expanded="false"
+                       arial-label="Toggle navigation"
+                   >
+                      <span class="navbar-toggle-icon"></span>
+                   </button>
+                   <div class="collapse navbar-collapse" id="navbarNav">
+                      <ul class=" navbar-nav nav-pills " id="pills-tab" role="tablist">
+                          <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">
+                               Planos 
+                            </a>
                           </li>
                           <li class="nav-item">
-                            <a class="nav-link  botao-nav"asp-area="" asp-controller="Home" asp-action="Login">Entrar</a>
+                             @Html.ActionLink("Entrar", "Login", "Home", null, new { @class = "btn btn-outline-primary" })
                           </li>
-                          <li class="nav-item">
-                            <a class="nav-link botao-nav" asp-area="" asp-controller="Home" asp-action="Sobre">Sobre nós</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link botao-nav" asp-area="" asp-controller="Home" asp-action="Atendimento">Atendimento</a>
-                          </li>
-                    </ul>
-                </div>
+                           <li class="nav-item">
+                               <a class="nav-link" href="#Sobre">Sobre nós</a>
+                           </li>
+                           <li class="nav-item">
+                              <a class="nav-link" href="#Atendimento">Atendimento</a>
+                           </li>
+                      </ul>
+                   </div>
+                </nav>
             </div>
-        </nav>
-    </header>
+        </div>
     <div class="container">
         <main role="main" class="pb-3">
             @RenderBody()
         </main>
     </div>
 
-     <footer style="background-color:#D5EDFF">
+    <footer style="background-color:#D5EDFF">
         <div class="container-fluid py-3">
         <div class="row">
           <div class="col-8">
@@ -72,8 +85,9 @@ UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="a
     </footer>
 
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
     @await RenderSectionAsync("Scripts", required: false)
 </body>
-</html>
+</html> 

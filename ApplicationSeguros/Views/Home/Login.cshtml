@@ -3,36 +3,40 @@
 }
 
 <div class="primary-home">
-    <h1 style="margin-top:200px;" class="text-center">Acessar conta</h1>
-    <h5 class="text-center lead">Para realizar o seu acesso,  preencha o seus dados.</h5>
+    <h1 style="margin-top:130px;" class="text-center">Acessar conta</h1>
+    <h5 class="text-center lead">Para realizar o seu acesso,  preencha os seus dados.</h5>
 
     <div style="margin-top:40px; margin-bottom:40px;" class="row">
       <form>
+      <div class="form-floating col-sm-4 offset-4 mb-4">
           <div class="form-floating col mb-3">
-                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" required>
-                <label for="floatingInput">Endereço de e-mail</label>
-                floatingInput = string Email;
+             <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" required>
+             <label for="floatingInput">Endereço de e-mail</label>
           </div>
+          </div>
+          <div class="form-floating col-sm-4 offset-4 mb-4">
           <div class="form-floating col">
-                <input type="password" class="form-control" id="floatingPassword" placeholder="Password" required>
-                <label for="floatingPassword">Senha</label>
-                <small id="passwordHelpBlock" class="form-text text-muted"> 
-                    Sua senha deve ter entre 8 e 20 caracteres, os quais devem ser letras e números, sem espaços, caracteres especiais ou emojis.
-                </small>
+             <input type="password" class="form-control" id="floatingPassword" placeholder="Password" required>
+             <label for="floatingPassword">Senha</label>
           </div>  
+          </div>
+          <div class="form-floating col-sm-4 offset-4 mb-4">
           <div class="form-group form-check">
             <input type="checkbox" class="form-check-input" id="exampleCheck1">
             <label class="form-check-label" for="exampleCheck1">Lembrar-me</label>
+            <a href="#" style="float: right; font-size: 15px;">
+              esqueceu a senha?
+            </a>
           </div>
-
-          @Html.ActionLink("Entrar", "Dashboard", "Home", null, new { @class = "btn btn-primary" })
+          </div>
       </form>
-
-      <div>
-          <h5>Não é cadastrado ?</h5>
+      <div class="form-floating col-sm-4 offset-4 mb-4"style="text-align:center;">
+        @Html.ActionLink("Entrar", "Dashboard", "Home", null, new { @class = "btn btn-primary" })
+      </div>
+      <div class="form-floating col-sm-4 offset-4 mb-4"style="text-align:center;">
+         <h5 style= "font-size: 17px;"> Não é cadastrado ?</h5 style>
          @Html.ActionLink("Cadastre-se", "Autenticador", "Home", null, new { @class = "btn btn-primary" })
       </div>
-
     </div>
 </div>
 

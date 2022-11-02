@@ -1,6 +1,13 @@
+#header {
+    width: 100%;
+    background-color: #D5EDFF;
+    transition: background ease-out 0.2s;
+}
+#header .navbar-collapse{
+    width:auto;
+}
 html {
-    font-size: 14px;
-    
+    font-size: 10px;
 }
 
 @media (min-width: 768px) {
@@ -26,6 +33,7 @@ main .bp-3{
     width:100%;
 }
 body {
+    font-family: 'Inter', sans-serif;
     background: #DCF1FA;
     width: 100%;
     margin-left: 0px;
@@ -36,6 +44,8 @@ body {
 .container {
     width:100vw;
 }
+
+
 .h1-home{
     margin-top:55px;
     padding-bottom:10px;
@@ -89,6 +99,6 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .navbar {
-    background:#DCF1FA;
+
     padding: 10px;
 }
