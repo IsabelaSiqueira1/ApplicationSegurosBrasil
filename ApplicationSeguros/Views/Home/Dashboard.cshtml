@@ -26,9 +26,9 @@
     <button type="button" class="justify_content-end btn btn-outline-primary btn-sm">Pesquisar</button>
     </nav>
 </div>-->
-
+<!--home-->
 <div class="jumbotron">
-      <h3 class="display-4">Olá, Raoul!</h3>
+      <h3 class="display-4" style="margin-top:50px; font-weight:400;">Olá, Raoul!</h3>
       <p class="lead">Plano atual: Comfort</p>
       <p class="lead">Veiculo: Fox 2008 Placa: xxxx-xxxx</p>
       <hr class="my-4">
@@ -36,39 +36,104 @@
       @Html.ActionLink("Falar com corretor", "Dashboard", "Home", null, new { @class = "btn btn-primary" })
 </div>
 
-<br><br>
-<div class="text-center">
-    <h3>Coberturas</h3>
-    <h7>Proteção sob medida para o seu carro</h7>
+<!--pagamento-->
+<div class="card" style="margin-top:130px;height:300px; max-width:850px;margin-left:160px; ">
+  <div class="card-header text-center" style="background-color:#A2CEFA; font-weight:700;">
+    Pagamentos
+  </div>
+  <div class="card-body" style="margin-left:100px;">
+    <p class="card-title" style="margin-bottom:15px; margin-top:20px;">Status: Ativo</p>
+    <div class="row">
+        <div class="col">
+            <p class="card-title"style="margin-bottom:15px;">Vencimento em: 30/12/2022</p>
+        </div>
+        <div class="col">
+            <p class="card-title" style="margin-bottom:15px;"><strong>R$ 150,00</strong></p>
+        </div>
+    </div>
+    <p class="card-title" style="margin-bottom:30px;">Atenção, sua fatura vence em 2 dias</p>
+    <div class="align-content-center">
+        @Html.ActionLink("Ver detalhes", "Dashboard", "Home", null, new { @class = "btn btn-primary" })
+        @Html.ActionLink("Pagar", "Dashboard", "Home", null, new { @class = "btn btn-primary" })
+     </div>
+  </div>
 </div>
-<br>
 
-<div class="row">
-  <div class="col">
-    <div class="card">
-      <div class="card-body">
-        <h5 class="card-title">Título especial</h5>
-        <p class="card-text">Com suporte a texto embaixo, que funciona como uma introdução a um conteúdo adicional.</p>
-        <a href="#" class="btn btn-primary">Visitar</a>
-      </div>
-    </div>
+<!--serviços-->
+<div class="card text-center" style="margin-top:130px;height:400px; max-width:100%;margin-left:0px; ">
+  <div class="card-header text-center" style="background-color:#A2CEFA; font-weight:700;">
+    Serviços
   </div>
-  <div class="col">
-    <div class="card">
-      <div class="card-body">
-        <h5 class="card-title">Título especial</h5>
-        <p class="card-text">Com suporte a texto embaixo, que funciona como uma introdução a um conteúdo adicional.</p>
-        <a href="#" class="btn btn-primary">Visitar</a>
-      </div>
+  <div class="card-body" style="margin-left:30px; margin-top:50px;">
+    <div class="row">
+        <div class="col">
+            <button type="button" class="btn btn-primary" style="width:150px;height:100px;">Fale com corretor</button>
+        </div>
+        <div class="col">
+            <button type="button" class="btn btn-primary" style="width:150px;height:100px;">Solicitar Reboque</button>
+        </div>
+        <div class="col">
+            <button type="button" class="btn btn-primary" style="width:150px;height:100px;">Atendimento</button>
+        </div>
+        <div class="col">
+            <button type="button" class="btn btn-primary" style="width:150px;height:100px;">Personalizar Plano</button>
+        </div>
     </div>
-  </div>
-  <div class="col">
-    <div class="card">
-      <div class="card-body">
-        <h5 class="card-title">Título especial</h5>
-        <p class="card-text">Com suporte a texto embaixo, que funciona como uma introdução a um conteúdo adicional.</p>
-        <a href="#" class="btn btn-primary">Visitar</a>
-      </div>
+    <div class="row" style="margin-top:30px;">
+        <div class="col">
+            <button type="button" class="btn btn-primary" style="width:150px;height:100px;">Fale com corretor</button>
+        </div>
+        <div class="col">
+            <button type="button" class="btn btn-primary" style="width:150px;height:100px;">Solicitar Reboque</button>
+        </div>
+        <div class="col">
+            <button type="button" class="btn btn-primary" style="width:150px;height:100px;">Atendimento</button>
+        </div>
+        <div class="col">
+            <button type="button" class="btn btn-primary" style="width:150px;height:100px;">Personalizar Plano</button>
+        </div>
     </div>
   </div>
 </div>
+
+<!--Sessão Dicas para carro-->
+
+    <h2 style="margin-top:200px;" class="text-center">Dicas de como evitar acidentes e para cuidados com seu carro</h2>
+    <p class="text-center lead" style="margin-top:30px;">Veja mais dicas no nosso Blog   >></p>
+
+    <div style="margin-top:60px; margin-bottom:40px;margin-left:150px;" class="row">
+      <div class="col"  style="border-radius:15px;">
+        <div class="card" style="width:250px; height:320px; border-radius:15px;">
+          <div class="card-body" style="border-radius:15px;">
+            <img src="../img/limpeza-de-vidro.png"  style="background:none; border:none; width:150px;margin-bottom:35px; margin-left:35px;" class="img-fluid img-thumbnail" />
+            <h5 class="card-title text-center" style="margin-bottom:15px;">A limpeza do seu carro importa</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col" style="border-radius:15px;">
+        <div class="card " style="width:250px; height:320px; border-radius:15px;">
+          <div class="card-body" style="border-radius:15px;">
+            <img src="../img/pneu.png" style="background:none; border:none;width:150px; margin-bottom:35px; margin-left:35px;" class="img-fluid img-thumbnail" />
+            <h5 class="card-title text-center" style="margin-bottom:15px;">Saiba por que a manutenção é tão importante</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+      <div class="row" style="margin-top:60px; margin-bottom:40px; margin-left:150px;">
+          <div class="col"style="border-radius:15px;">
+            <div class="card" style="width:250px; height:320px; border-radius:15px;">
+              <div class="card-body" style="border-radius:15px;">
+                <img src="../img/servicos.png" style="background:none; border:none;width:150px; margin-bottom:35px; margin-left:35px;" class="img-fluid " />
+                <h5 class="card-title text-center" style="margin-bottom:15px;">Saiba qual melhor combustível para o seu carro</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col" style="border-radius:15px;">
+            <div class="card" style="width:250px; height:320px; border-radius:15px;">
+              <div class="card-body" style="border-radius:15px;">
+                <img src="../img/pressao-do-pneu.png" style="background:none; border:none;width:150px;margin-bottom:35px; margin-left:35px;" class="img-fluid img-thumbnail" />
+                <h5 class="card-title text-center" style="margin-bottom:15px;">Calibragem de pneu e tudo que você precisa saber</h5>
+              </div>
+            </div>
+          </div>
+      </div>

@@ -15,8 +15,8 @@ UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="a
         <div id="header">
             <div class="container">
                 <nav class="navbar navbar-expand-lg justify-content-between navbar-toggleable-sm border-bottom box-shadow ">
-                   <a class="navbar-brand" href="#Home">
-                       <img src="./img/Top Seguros Brasil.png" class="img-fluid"/>
+                   <a class="navbar-brand" style="width:200px;" href="#Home">
+                       <img src="../img/Top Seguros Brasil.png" class="img-fluid"/>
                    </a>
                    <button
                        class="navbar-toggler"
@@ -29,23 +29,21 @@ UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="a
                    >
                       <span class="navbar-toggle-icon"></span>
                    </button>
-                   <div class="collapse navbar-collapse" id="navbarNav">
-                      <ul class=" navbar-nav nav-pills " id="pills-tab" role="tablist">
+                   <div class="collapse navbar-collapse offset-5" id="navbarNav">
+                      <ul class=" nav nav-pills " id="pills-tab" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active botao-nav"asp-area="" asp-controller="Home" asp-action="Index">Planos</a>
+                        </li>
                           <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">
-                               Planos 
-                            </a>
+                            <a class="nav-link  botao-nav"asp-area="" asp-controller="Home" asp-action="Login">Entrar</a>
                           </li>
                           <li class="nav-item">
-                             @Html.ActionLink("Entrar", "Login", "Home", null, new { @class = "btn btn-outline-primary" })
+                            <a class="nav-link botao-nav" asp-area="" asp-controller="Home" asp-action="Sobre">Sobre nós</a>
                           </li>
-                           <li class="nav-item">
-                               <a class="nav-link" href="#Sobre">Sobre nós</a>
-                           </li>
-                           <li class="nav-item">
-                              <a class="nav-link" href="#Atendimento">Atendimento</a>
-                           </li>
-                      </ul>
+                          <li class="nav-item">
+                            <a class="nav-link botao-nav" asp-area="" asp-controller="Home" asp-action="Atendimento">Atendimento</a>
+                          </li>
+                        </ul>
                    </div>
                 </nav>
             </div>
@@ -56,7 +54,7 @@ UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="a
         </main>
     </div>
 
-    <footer style="background-color:#D5EDFF">
+    <footer style="background-color:#edf2f4">
         <div class="container-fluid py-3">
         <div class="row">
           <div class="col-8">
@@ -81,7 +79,7 @@ UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="a
         </div>
         <div class="text-center" style="background-color: #5BB7F7; color:#ffffff;padding:15px;" >
           &copy 2022 Top Seguros Brasil
-        </div>
+        </div> 
     </footer>
 
     <script src="~/lib/jquery/dist/jquery.min.js"></script>

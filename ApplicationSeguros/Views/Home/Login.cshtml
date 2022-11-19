@@ -3,10 +3,10 @@
 }
 
 <div class="primary-home">
-    <h1 style="margin-top:130px;" class="text-center">Acessar conta</h1>
+    <h1 style="margin-top:100px;" class="text-center">Acessar conta</h1>
     <h5 class="text-center lead">Para realizar o seu acesso,  preencha os seus dados.</h5>
 
-    <div style="margin-top:40px; margin-bottom:40px;" class="row">
+    <div style="margin-top:37px; margin-bottom:40px;" class="row">
       <form>
       <div class="form-floating col-sm-4 offset-4 mb-4">
           <div class="form-floating col mb-3">
@@ -35,8 +35,12 @@
       </div>
       <div class="form-floating col-sm-4 offset-4 mb-4"style="text-align:center;">
          <h5 style= "font-size: 17px;"> Não é cadastrado ?</h5 style>
-         @Html.ActionLink("Cadastre-se", "Autenticador", "Home", null, new { @class = "btn btn-primary" })
+         @Html.ActionLink("Cadastre-se", "Formulario", "Home", null, new { @class = "btn btn-primary" })
       </div>
     </div>
 </div>
 
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script src="~/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="~/lib/jquery/dist/jquery.js"></script>
+<script src="~/js/site.js"></script>

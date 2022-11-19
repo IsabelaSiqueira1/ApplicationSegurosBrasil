@@ -4,21 +4,44 @@
 
 <div class="text-center">
 
-    <form>
+    <form style="margin-top:80px;">
         <div>
-            <h5>Precisando validar os seus dados</h5>
+            <h4>Precisando validar os seus dados</h4>
             <p>Por questão de seguração iremos enviar um sms com o codigo de validação</p>
 
             <div>
-                <h6>Confirme novamente o seu E-mail</h6>
+                <h6 style="margin-top:60px; margin-bottom:50px;">Confirme novamente o seu E-mail</h6>
 
-              <div class="form-floating mb-3">
-                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+              <div class="form-floating mb-3" style="margin-left:350px;">
+                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com"style="width:450px;">
                     <label for="floatingInput">Endereço de e-mail</label>
-                    @Html.ActionLink("Confirmar", "Dashboard", "Home", null, new { @class = "btn btn-primary" })
+                    <div style="margin-right:320px; margin-top:50px; margin-bottom:50px;">
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                         Confirmar
+                        </button>
+                    </div>
               </div>
-
             </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="staticBackdropLabel">Confirmação</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                Estamos confirmando o seu e-mail e ja iremos direcionar.
+              </div>
+              <div class="modal-footer">
+                @Html.ActionLink("Ok", "Dashboard", "Home", null, new { @class = "btn btn-primary" })
+              </div>
+            </div>
+          </div>
+        </div>
+
+
             <div>
                 <div>
                     <h5>Enviamos um e-mail para você!</h5>
