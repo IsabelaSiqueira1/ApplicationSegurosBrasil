@@ -13,7 +13,7 @@ namespace ApplicationSeguros.Controllers
             return View();
         }
 
-        public IActionResult Privacy()
+        public IActionResult Vistoria()
         {
             return View();
         }
